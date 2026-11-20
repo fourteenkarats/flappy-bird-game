@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10152e">
+    <title>Flappy Sky - Arcade Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-shell">
+
+    <header class="topbar">
+        <div class="brand">
+            <span class="brand-icon">🐤</span>
+            <div>
+                <h2>FLAPPY <span>SKY</span></h2>
+                <small>ARCADE EDITION</small>
+            </div>
+        </div>
+
+        <div class="best-badge">
+            <span>🏆</span>
+            <div>
+                <small>РЕКОРД</small>
+                <strong id="best">0</strong>
+            </div>
+        </div>
+    </header>
+
+    <main class="game">
+        <canvas id="canvas" width="420" height="650"></canvas>
+
+        <div class="hud">
+            <div class="hud-card">
+                <span>⭐</span>
+                <div>
+                    <small>ТОЧКИ</small>
+                    <strong id="score">0</strong>
+                </div>
+            </div>
+
+            <div class="hud-card coin-card">
+                <span>🪙</span>
+                <div>
+                    <small>МОНЕТИ</small>
+                    <strong id="coins">0</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay" id="menu">
+            <div class="game-logo">🐤</div>
+            <div class="eyebrow">WELCOME TO THE SKY</div>
+            <h1>FLAPPY <span>SKY</span></h1>
+            <p class="description">
+                Лети високо, избягвай препятствията<br>
+                и събирай златни монети!
+            </p>
+
+            <div class="features">
+                <div>⭐ +1 точка</div>
+                <div>🪙 +5 точки</div>
+            </div>
+
+            <button id="start" class="play-button">
+                <span>▶</span> ЗАПОЧНИ ИГРА
+            </button>
+
+            <p class="controls">SPACE / CLICK / TAP TO FLY</p>
+        </div>
+
+        <div class="overlay hidden" id="gameOver">
+            <div class="game-logo">💫</div>
+            <div class="eyebrow">GAME FINISHED</div>
+            <h1>GAME <span>OVER</span></h1>
+            <p class="description">Добър опит! Опитай отново.</p>
+
+            <div class="result-grid">
+                <div class="result-card">
+                    <span>⭐</span>
+                    <small>ТОЧКИ</small>
+                    <strong id="finalScore">0</strong>
+                </div>
+                <div class="result-card">
+                    <span>🪙</span>
+                    <small>МОНЕТИ</small>
+                    <strong id="finalCoins">0</strong>
+                </div>
+                <div class="result-card">
+                    <span>🏆</span>
+                    <small>РЕКОРД</small>
+                    <strong id="finalBest">0</strong>
+                </div>
+            </div>
+
+            <button id="restart" class="play-button">
+                <span>↻</span> ИГРАЙ ОТНОВО
+            </button>
+
+            <p class="controls">CAN YOU BEAT YOUR RECORD?</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span>FLAPPY SKY © 2026</span>
+        <span>MADE FOR ARCADE LOVERS 💜</span>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
